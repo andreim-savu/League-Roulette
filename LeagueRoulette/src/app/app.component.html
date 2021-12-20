@@ -1,0 +1,24 @@
+<div class="page-container">
+  <div class="input-side">
+    <div class="players-container">
+      <div *ngFor="let group of playersArr.controls" [formGroup]="group">
+        <input class="player-input" type="text" formControlName="name">
+      </div>
+      <button *ngIf="playersArr.controls.length < 5" (click)="addPlayer()">+ Add</button>
+    </div>
+    <button class="start-button" (click)="calculateRoles()">Start</button>
+  </div>
+
+  <div class="result-side">
+    <div *ngFor="let player of players">
+      <div class="table-player">
+        <div>{{player.name}}</div>
+        <div>{{player.order[0]}}</div>
+        <div>{{player.order[1]}}</div>
+        <div>{{player.order[2]}}</div>
+        <div>{{player.order[3]}}</div>
+        <div>{{player.order[4]}}</div>
+      </div>
+    </div>
+  </div>
+</div>

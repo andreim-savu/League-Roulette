@@ -1,0 +1,38 @@
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 300px;
+
+    .input-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 250px;
+        height: 300px;
+
+        padding: 15px 5px;
+
+        outline: 1px solid red;
+        
+        .players-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+
+            align-items: center;
+
+            width: 250px;
+
+            .player-input {
+                text-align: center;
+                height: 30px;
+            }
+        }
+    }
+
+    .result-side {
+        width: 450px;
+        outline: 1px solid burlywood;
+    }
+}
