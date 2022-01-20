@@ -11,7 +11,14 @@ export class AppComponent implements OnInit{
 
   playersArr: FormArray = new FormArray([]);
 
-  players = [];
+  players = [{
+    name: "Ramzar",
+    order: ["Top", "Jungle", "Mid", "Bottom", "Supp"]
+  },
+  {
+    name: "PartMan",
+    order: ["Top", "Jungle", "Mid", "Bottom", "Supp"]
+  }];
 
   ngOnInit(): void {
     this.addPlayer();

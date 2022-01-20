@@ -32,7 +32,16 @@
     }
 
     .result-side {
+        display: flex;
+        flex-direction: column;
         width: 450px;
         outline: 1px solid burlywood;
+
+        background-color: white;
+
+        .table-player {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
